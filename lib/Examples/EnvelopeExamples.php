@@ -18,7 +18,7 @@ $mergeField          = new Signable\MergeField( 20000, 'Test merge' );
 $mergeFields[]       = $mergeField;
 
 $envelopeDocuments   = array();
-$envelopeDocument    = new Signable\DocumentWithoutTemplate( 'New Document', '51209051e0ae7515b6e27b37b85f99b9', $mergeFields );
+$envelopeDocument    = new Signable\DocumentWithTemplate( 'New Document', '51209051e0ae7515b6e27b37b85f99b9', $mergeFields );
 $envelopeDocuments[] = $envelopeDocument;
 
 $envelopeParties     = array();
